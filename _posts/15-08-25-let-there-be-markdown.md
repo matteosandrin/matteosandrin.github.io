@@ -32,7 +32,7 @@ Here I present to you its core beliefs summarized for future reference:
 **4. Thou shalt provide illustrations through aforementioned hyperlinks:** 
 
 `![favicon](http://livepluscode.com/public/favicon.ico)` : ![favicon](http://livepluscode.com/public/favicon.ico)
-`![favicon](../public/favicon.ico)` : ![favicon](../public/favicon.ico)
+`![favicon](public/favicon.ico)` : ![favicon](public/favicon.ico)
 
 **5. Thou shalt code:**  
 
