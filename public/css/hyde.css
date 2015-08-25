@@ -45,6 +45,14 @@ html {
   }
 }
 
+::selection{
+  background: RGBA(204, 0, 0, 0.7);
+}
+
+/*::-mox-selection{
+  background: #900020;
+  opacity: 0.5; 
+}*/
 
 /*
  * Sidebar
