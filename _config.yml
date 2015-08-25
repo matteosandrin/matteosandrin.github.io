@@ -10,17 +10,10 @@ relative_permalinks: true
 title:            'live+code'
 tagline:          'Tales of a traveling programmer'
 description:      '{ <br>  "name":"Matteo",<br>  "surname":"Sandrin",<br>  "mainly":"programmer",<br>  "also":"traveler"<br>}'
-url:              http://hyde.getpoole.com
+url:              http://livepluscode.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Matteo Sandin'
 
 paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
