@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This project is meant to be a <span title="Got it? because it's hoted on GitHub Pages hehe">*repository*</span> for both my `code` and my thoughts on life, death and traveling, hence the name of the blog, [LIVE+CODE](/).
+This project is meant to be a <span title="Got it? because it's hosted on GitHub Pages /pun">*repository*</span> for both my `code` and my thoughts on life, death and traveling, hence the name of the blog, [LIVE+CODE](/).
 
 I am an Italian programmer, based in Milan; however, I will be spending the end of 2015 and the better part of 2016 in Boston, MA.
 
