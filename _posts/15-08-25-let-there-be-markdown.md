@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let here Be Markdown
+title: Let There Be Markdown
 ---
 
 Today I discovered the joys of a new cult called markdown.
