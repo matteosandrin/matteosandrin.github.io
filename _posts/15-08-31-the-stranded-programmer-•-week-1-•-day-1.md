@@ -71,7 +71,7 @@ I don't mind though, I like being watched.
 
 The evening was uneventful, but bonding.  
 We feel more like a community now.  
-This is has potential.  
+This has potential.  
 I think I could be happy here.  
 
 `end()`
