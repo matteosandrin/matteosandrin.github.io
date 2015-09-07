@@ -1,11 +1,10 @@
-<!--
 ---
 layout: post
-title: The Stranded Programmer • Week 1 • Day 1
+title: The Stranded Programmer • Opening Remarks
 ---
--->
 
 
+__Week 1 • Day 1__
 
 ### 1. The Preface
 
