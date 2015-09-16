@@ -136,6 +136,13 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
+#horizontal-rule{
+  height: 5px; 
+  background-color: #900020; 
+  width: 100%; 
+  margin-bottom: 80px;
+}
+
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
