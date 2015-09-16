@@ -36,8 +36,7 @@ Focus focus focus you loved this place when you visited, don't be *unreasonable*
  
 Unpacking is dreadful, like picking apart a dead animal. 
 Everyone is impossibly nice, doesn't feel right.  
-Always hated icebreakers, but now they *really* seem to make a difference.
-It may be selfish, but the fact that my parents are still here unnerves me. For some reason.  
+Always hated icebreakers, but now they *really* seem to make a difference.  
 
 The hierarchy is strict, but it pretends not to be, with the Dorm Leaders as foot soldiers of an army controlling its own people.  
 I wave to a white car disappearing in the lot.  
@@ -50,20 +49,17 @@ So it begins.
 ### 3. The First Characters
 
 As I said, people are unnervingly nice here.   
-This morning I had a session of talking about *my physical, mental and emotional condition* as an *international* student.  
-Whatever that means.  
-We'll see it in action, most definitely.  
-Still unnerving. And eerie.  
+This morning I had a session of talking about *my physical, mental and emotional condition* as an *international* student.
+We'll see it in action, most definitely. 
 
 Had a very nice walk up a hill. Talked with interesting people.  
 One in particular. We'll see about her as well.  
-It feels like there's a kind of tacit acknowledgment. Kinda beautiful if you ask me.  
-
+It feels like there's a kind of tacit acknowledgment.
 
 ### 4. Finally, The Plot Thickens
 
 Tonight I had a very nice dinner and actually enjoyed conversation.  
-There's some witty banter going around, not quite flirting, but almost.  
+There's some witty banter going around.  
 Those big eyes are watching me.  
 I don't mind though, I like being watched.  
 
