@@ -10,7 +10,7 @@ __Week 3 • Day 17__
 I'm sitting on a green sofa, in a green living room, surrounded by green carpetry that runs up to two green doors. This is the Aleph dorm, in all its beauty.  
 ![The Common Room](/public/images/img0003.jpg)  
 
-It's actually a really cozy living space, while retaining a good deal of modernism, thanks to those floor to ceiling windows. The air is getting chilly, and frankly I don't even mind it, it's been hot for too long. While I have lots of friend here, I find a deep connection just with one person... I don't know if I'm supposed to be sad that I have so few or grateful that I have this one.
+It's actually a really cozy living space, while retaining a good deal of modernism, thanks to those floor to ceiling windows. The air is getting chilly, and frankly I don't even mind it, it's been hot for too long. While I have lots of friend here, I can find only a few deep connections... I don't know if I'm supposed to be sad that I have so few or grateful that I have these.
 
 ### 2. Race, Identity and Gender
 

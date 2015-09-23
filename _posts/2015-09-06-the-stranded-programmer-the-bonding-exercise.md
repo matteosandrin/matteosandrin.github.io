@@ -12,8 +12,8 @@ Today we had to produce and act a play based on a fairytale, which was all execu
 Now I'll have a run down of all the people I remember here, just as a reminder for the future, when I'll eventually forget them all:  
 
 ##### 2.1 Marisa • 2017
-Marisa is somewhat a riddle; she's very challenging to talk to, and I guess for some reason I think of that as a good character trait instead of a flaw. She appears very confident but I suspect that could be just a façade.
-Furthermore, she's very smart and witty, and makes no excuse for it. The fact that she's very open about changes in her character may signify that she's trying to believe what she says herself while trying to make others believe it.
+Marisa is somewhat a riddle; she's very challenging to talk to, and I guess for some reason I think of that as a good character trait instead of a flaw. She appears very confident. Is that just a façade?.
+Furthermore, she's very smart and witty, and makes no excuse for it. The fact that she's very open about changes in her character may signify that she's trying to believe what she says herself while trying to make others believe it. But I don't really know her enough to judge right now.
 
 ##### 2.2 Benjamin • 2019
 Ben is a mildly aware person, but just lacks the expertise in life. As an example, he's third-wheeling Emilia and Dario, maybe without even knowing it.  He has potential though; today, during the play, I noticed that he's well liked and respected, and he was actually kinda good acting, so I keep my hopes up.  

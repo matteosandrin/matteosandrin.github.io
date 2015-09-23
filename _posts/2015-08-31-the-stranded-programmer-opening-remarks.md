@@ -52,16 +52,13 @@ As I said, people are unnervingly nice here.
 This morning I had a session of talking about *my physical, mental and emotional condition* as an *international* student.
 We'll see it in action, most definitely. 
 
-Had a very nice walk up a hill. Talked with interesting people.  
-One in particular. We'll see about her as well.  
+Had a very nice walk up a hill. Talked with interesting people. 
 It feels like there's a kind of tacit acknowledgment.
 
 ### 4. Finally, The Plot Thickens
 
 Tonight I had a very nice dinner and actually enjoyed conversation.  
 There's some witty banter going around.  
-Those big eyes are watching me.  
-I don't mind though, I like being watched.  
 
 
 The evening was uneventful, but bonding.  
