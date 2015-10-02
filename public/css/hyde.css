@@ -299,6 +299,6 @@ a.sidebar-nav-item:focus {
   margin-right: auto;
   padding-bottom: 0.8rem;
 }
-
+ img { cursor: pointer; cursor: hand; }
 
 
