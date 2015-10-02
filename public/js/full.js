@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		images[i].addEventListener("click", function () {
 			if (screenfull.enabled) {
 		        screenfull.toggle(this);
+		        this.style['cursor'] = 'none';
 		    }
 		    console.log("clicked");
 		},false);
