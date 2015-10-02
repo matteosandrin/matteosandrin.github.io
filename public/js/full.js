@@ -3,10 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	for (var i = images.length - 1; i >= 0; i--) {
 		images[i].addEventListener("click", function () {
 			if (screenfull.enabled) {
-		        screenfull.toggle(this);
-		        this.style['cursor'] = 'none';
+				screenfull.toggle(this);
+				if (screenfull.isFullscreen) {
+					this.style['cursor'] = 'none';
+				}else{
+					this.style['cursor'] = 'pointer';
+				}   
 		    }
-		    console.log("clicked");
 		},false);
 	}
 
