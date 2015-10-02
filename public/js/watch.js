@@ -7,7 +7,7 @@ document.getElementById('watch-container').width = "100%";
 document.getElementById('watch-container').width = "100%";
 
 var s = Snap.select('#svg');
-Snap.load("/public/images/watch.svg", function (f) {
+Snap.load("/public/images/watch-red.svg", function (f) {
 	face = f.select('#face');
 	s.append(face);
 	hours = f.select('#hours');
@@ -35,3 +35,18 @@ window.setInterval(function(){
 	seconds.transform( 'r'+ (s+ms) +',' + w + ',' + w );
 
 }, 1);
+
+// function changeColor (element) {
+// 	if (element.css["fill"] == "#901923") {
+// 		element.css["fill"] == "#FFFFFF"
+// 	}else{
+// 		element.css["fill"] == "#901923"
+// 	}
+// 	var all = element.selectAll('*');
+// 	for (var i = 0; i < all.length; i++) {
+// 		changeColor(all[i]);
+// 	}
+
+// }
+
+// changeColor(s);
