@@ -18,4 +18,4 @@ Doesn't it feel good to take things off your chest. This one had been rumbling f
 
 I had a very large vietnamese Pho soup. It was spicy. It was great. It's now making its way through my insides wobbling left and right. I had my nail done in a chinese shop, first manicure of my life. Great feeling. My nails are so shiny. Will be back for the French version.  
   
-Evrerythng is confused, but it's on its way to being where I'd like it to.
+Evrerything is confused, but it's on its way to being where I'd like it to.
