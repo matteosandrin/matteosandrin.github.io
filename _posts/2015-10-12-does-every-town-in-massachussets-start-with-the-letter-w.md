@@ -112,7 +112,7 @@ I choose to define a town as "near" to the school if it is within 30 minutes of 
 
 ```
  
-There are 23 towns near the Cambridge School of Weston that start with the letter "w", which is roughly half of all "w" starting towns in Masachussets. *All in a 35 miles radius.*
+There are 23 towns near the Cambridge School of Weston that start with the letter "w", which is roughly half of all "w" starting towns in Massachussets. *All in a 35 miles radius.*
  
 ```python
 >>> pprint(towns)
