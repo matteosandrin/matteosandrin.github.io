@@ -20,3 +20,4 @@ author:
   name:           'Matteo Sandin'
 
 paginate:         5
+gems: ['jekyll-paginate']

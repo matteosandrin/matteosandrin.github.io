@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Does Every Town In Masssachussets Start With The Letter "W"?
+title: Does Every Town In Massachussets Start With The Letter "W"?
 
 ---
 
