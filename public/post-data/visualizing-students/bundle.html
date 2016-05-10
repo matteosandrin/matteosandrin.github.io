@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    <style type="text/css">
+
+path.arc {
+  cursor: move;
+  fill: #fff;
+}
+
+.node {
+  font-size: 12px;
+}
+
+.node:hover {
+  fill: #1f77b4;
+}
+
+.link {
+  fill: none;
+  stroke: #92001C;
+  stroke-opacity: .2;
+  pointer-events: none;
+}
+
+.link.source, .link.target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.node.target {
+  fill: #1f77b4 !important;
+}
+
+.link.source {
+  stroke: #1f77b4;
+}
+
+.node.source {
+  fill: #92001C;
+}
+
+.link.target {
+  stroke: #1f77b4;
+}
+
+.pure-menu-item {
+  font-size: 20px;
+  background-color: #92001C;
+}
+
+.pure-menu-item a {
+  color: white; 
+}
+
+
+
+.pure-menu .pure-menu-horizontal {
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+
+.pure-menu-list{
+  display: inline-block;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" id="menuLinkYear" class="pure-menu-link pure-header">2016</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">2016</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">2017</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">2018</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">2019</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" id="menuLinkMod" class="pure-menu-link pure-header">Mod 7</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 7</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 6</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 5</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 4</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 3</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 2</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mod 1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.js"></script>
+    <script type="text/javascript" src="packages.js"></script>
+    <script type="text/javascript">
+
+ $(document).ready(function() 
+ {
+    $('.pure-menu-link').click(function(e) 
+    { 
+      var label = $(this).text();
+      var mod = $('#menuLinkMod').text();
+      var year = $('#menuLinkYear').text();
+      $(this).parent().parent().parent().find('.pure-header').text(label);
+      $('svg').remove()
+      if (label.indexOf("Mod") != -1) {
+        var fileName = "data_mod" + label.slice(4) + "_class" + year + ".json";
+        makeGraph(year,label.slice(4));
+      }else{
+        var fileName = "data_mod" + mod.slice(4) + "_class" + label + ".json";
+        makeGraph(label,mod.slice(4));
+      }
+    });
+ });
+
+
+function makeGraph(year,mod){
+
+  var w = window.innerWidth,
+      h = window.innerHeight,
+      rx = w / 2,
+      ry = h / 2,
+      m0,
+      rotate = 0;
+
+  var splines = [];
+
+  var cluster = d3.layout.cluster()
+      .size([360, ry - 120]);
+      // .sort(function(a, b) { return d3.ascending(a.key, b.key); });
+
+  var bundle = d3.layout.bundle();
+
+  var line = d3.svg.line.radial()
+      .interpolate("bundle")
+      .tension(.75)
+      .radius(function(d) { return d.y; })
+      .angle(function(d) { return d.x / 180 * Math.PI; });
+
+  // Chrome 15 bug: <http://code.google.com/p/chromium/issues/detail?id=98951>
+  var div = d3.select("body").insert("div")
+      .style("width", "90%")
+      .style("height", "90%")
+      .style("margin","auto")
+      // .style("position", "absolute")
+      .style("-webkit-backface-visibility", "hidden");
+
+
+  var svg = div.append("svg:svg")
+      .attr("width", '100%')
+      .attr("height", '100%')
+      .attr('viewBox','0 0 '+Math.min(w,h)+' '+Math.min(w,h))
+      .attr('preserveAspectRatio','xMinYMin')
+    .append("svg:g")
+      .attr("transform", "translate(" + Math.min(w,h) / 2 + "," + Math.min(w,h) / 2 + ")"); 
+
+  svg.append("svg:path")
+      .attr("class", "arc")
+      .attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
+      .on("mousedown", mousedown);
+
+  var fileName = "data_mod" + mod.toString() + "_class" + year.toString() + ".json";
+  console.log(fileName);
+
+  d3.json(fileName, function(classes) {
+    var nodes = cluster.nodes(packages.root(classes)),
+        links = packages.imports(nodes),
+        splines = bundle(links);
+
+    var path = svg.selectAll("path.link")
+        .data(links)
+      .enter().append("svg:path")
+        .attr("class", function(d) { return "link source-" + d.source.key + " target-" + d.target.key; })
+        .attr("d", function(d, i) { return line(splines[i]); });
+
+    svg.selectAll("g.node")
+        .data(nodes.filter(function(n) { return !n.children; }))
+      .enter().append("svg:g")
+        .attr("class", "node")
+        .attr("id", function(d) { return "node-" + d.key; })
+        .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+      .append("svg:text")
+        .attr("dx", function(d) { return d.x < 180 ? 8 : -8; })
+        .attr("dy", ".31em")
+        .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+        .attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
+        .style("font-size","10px")
+        .text(function(d) { return d.label; })
+        .on("mouseover", mouseover)
+        .on("mouseout", mouseout);
+
+    d3.select("input[type=range]").on("change", function() {
+      line.tension(this.value / 100);
+      path.attr("d", function(d, i) { return line(splines[i]); });
+    });
+  });
+
+  d3.select(window)
+      .on("mousemove", mousemove)
+      .on("mouseup", mouseup);
+
+  function mouse(e) {
+    return [e.pageX - rx, e.pageY - ry];
+  }
+
+  function mousedown() {
+    m0 = mouse(d3.event);
+    d3.event.preventDefault();
+  }
+
+  function mousemove() {
+    if (m0) {
+      var m1 = mouse(d3.event),
+          dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
+      div.style("-webkit-transform", "translateY(" + (ry - rx) + "px)rotateZ(" + dm + "deg)translateY(" + (rx - ry) + "px)");
+    }
+  }
+
+  function mouseup() {
+    if (m0) {
+      var m1 = mouse(d3.event),
+          dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
+
+      rotate += dm;
+      if (rotate > 360) rotate -= 360;
+      else if (rotate < 0) rotate += 360;
+      m0 = null;
+
+      div.style("-webkit-transform", null);
+
+      svg
+          .attr("transform", "translate(" + rx + "," + ry + ")rotate(" + rotate + ")")
+        .selectAll("g.node text")
+          .attr("dx", function(d) { return (d.x + rotate) % 360 < 180 ? 8 : -8; })
+          .attr("text-anchor", function(d) { return (d.x + rotate) % 360 < 180 ? "start" : "end"; })
+          .attr("transform", function(d) { return (d.x + rotate) % 360 < 180 ? null : "rotate(180)"; });
+    }
+  }
+
+  function mouseover(d) {
+    svg.selectAll("path.link.target-" + d.key)
+        .classed("target", true)
+        .each(updateNodes("source", true));
+
+    svg.selectAll("path.link.source-" + d.key)
+        .classed("source", true)
+        .each(updateNodes("target", true));
+  }
+
+  function mouseout(d) {
+    svg.selectAll("path.link.source-" + d.key)
+        .classed("source", false)
+        .each(updateNodes("target", false));
+
+    svg.selectAll("path.link.target-" + d.key)
+        .classed("target", false)
+        .each(updateNodes("source", false));
+  }
+
+  function updateNodes(name, value) {
+    return function(d) {
+      if (value) this.parentNode.appendChild(this);
+      svg.select("#node-" + d[name].key).classed(name, value);
+    };
+  }
+
+  function cross(a, b) {
+    return a[0] * b[1] - a[1] * b[0];
+  }
+
+  function dot(a, b) {
+    return a[0] * b[0] + a[1] * b[1];
+  }
+}
+
+makeGraph(2016,7);
+
+    </script>
+  </body>
+</html>
