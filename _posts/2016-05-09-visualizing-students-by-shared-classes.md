@@ -8,3 +8,5 @@ This interactive graph shows every student attending my high school, divided by 
 <iframe style="width:100%;height:800px" src="/public/post-data/visualizing-students/bundle.html" frameBorder="0"></iframe>
 
 I made this graph to learn more about the [d3.js](https://d3js.org/) library, to delve into graph theory, and most importantly beacuse I like pretty visuals.
+
+*P.S. It does not work well at all on mobile devices.*
