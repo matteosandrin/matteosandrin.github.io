@@ -49,5 +49,3 @@ Next I added the support for all ASCII characters, which was fairly easy. I just
 ### 4. The End of a Struggle
 
 In the end, I faced the horrors of Javascript and I won. You can try out a working demo of the app on [Github Pages](http://livepluscode.com/emojicipher). It was a difficult four hous of work, but I came out on top. You can find all the code in the [Github repo](https://github.com/SandPhoenix/emojicipher). 
-   
-**Me - 1 | JS - 0**
