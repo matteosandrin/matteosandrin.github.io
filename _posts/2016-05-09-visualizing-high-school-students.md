@@ -15,6 +15,8 @@ This graph shows the distribution of my high school's classes by department, on 
 
 <iframe style="width:100%;height:600px;overflow:hide;margin-top:0px" src="/public/post-data/visualizing-students/pie3.html" frameBorder="0" scrolling="no"></iframe>
 
+<iframe style="width:100%;height:600px;overflow:hide;margin-top:0px" src="/public/post-data/visualizing-students/pie4.html" frameBorder="0" scrolling="no"></iframe>
+
 
 I made these graphs to learn more about the [d3.js](https://d3js.org/) library, to delve into graph theory, and most importantly beacuse I like pretty visuals.
 
