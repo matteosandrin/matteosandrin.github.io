@@ -12,7 +12,7 @@ permalink:        pretty
 # Setup
 title:            'LIVE+CODE'
 tagline:          'Tales of a traveling programmer'
-description:      '{ <br>  "name":"Matteo",<br>  "surname":"Sandrin",<br>  "mainly":"programmer",<br>  "also":"traveler"<br>}'
+description:      '/home/matteosandrin/stuff'
 url:              http://livepluscode.com
 baseurl:          /
 
