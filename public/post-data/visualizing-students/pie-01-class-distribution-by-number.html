@@ -22,8 +22,8 @@
 
 	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-	<link href="nv/nv.d3.css" rel="stylesheet">
-	<script src="nv/nv.d3.js"></script>
+	<link href="js/nv/nv.d3.css" rel="stylesheet">
+	<script src="js/nv/nv.d3.js"></script>
 	<script>
 
 	var w = window.innerWidth,
@@ -51,7 +51,7 @@
 		return "<span style='font-size: 17px; padding:5px;'><b>" + d.data.label + ":</b> " + d.data.percent + "% (" + d.data.value + " classes)</span>";
 	});
 
-	    d3.json('class_pie_data.json',function(data){
+	    d3.json('json/class_pie_data.json',function(data){
 		  	d3.select("#chart svg")
 		  	.datum(data)
 		  	.attr('viewBox','0 0 '+w+' '+h)

@@ -111,9 +111,9 @@ body {
             </li>
         </ul>
     </div>
-    <script type="text/javascript" src="d3/d3.js"></script>
-    <script type="text/javascript" src="d3/d3.layout.js"></script>
-    <script type="text/javascript" src="packages.js"></script>
+    <script type="text/javascript" src="js/d3/d3.js"></script>
+    <script type="text/javascript" src="js/d3/d3.layout.js"></script>
+    <script type="text/javascript" src="js/packages.js"></script>
     <script type="text/javascript">
 
  $(document).ready(function() 
@@ -126,10 +126,10 @@ body {
       $(this).parent().parent().parent().find('.pure-header').text(label);
       $('svg').remove()
       if (label.indexOf("Mod") != -1) {
-        var fileName = "data_mod" + label.slice(4) + "_class" + year + ".json";
+        var fileName = "json/data_mod" + label.slice(4) + "_class" + year + ".json";
         makeGraph(year,label.slice(4));
       }else{
-        var fileName = "data_mod" + mod.slice(4) + "_class" + label + ".json";
+        var fileName = "json/data_mod" + mod.slice(4) + "_class" + label + ".json";
         makeGraph(label,mod.slice(4));
       }
     });
@@ -181,7 +181,7 @@ function makeGraph(year,mod){
       .attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
       .on("mousedown", mousedown);
 
-  var fileName = "data_mod" + mod.toString() + "_class" + year.toString() + ".json";
+  var fileName = "json/data_mod" + mod.toString() + "_class" + year.toString() + ".json";
   console.log(fileName);
 
   d3.json(fileName, function(classes) {
